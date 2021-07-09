@@ -5,6 +5,7 @@ import AddContact from './AddContact';
 import ContactList from './ContactList';
 import {uuid} from 'uuidv4';
 import "./App.css";
+import ContactDetails from './ContactDetails';
 
 
 function App() {
@@ -60,6 +61,10 @@ function App() {
         <AddContact {...props} addContactHandler={addContactHandler}/>
       )}
       />
+      
+      <Route path="/contact/:id" component={ContactDetails}>
+
+      </Route>
       
      
 
